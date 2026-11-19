@@ -2032,6 +2032,21 @@ node_ipvs_outgoing_bytes_total 0
 # HELP node_ipvs_outgoing_packets_total The total number of outgoing packets.
 # TYPE node_ipvs_outgoing_packets_total counter
 node_ipvs_outgoing_packets_total 0
+# HELP node_kernel_faults_hard_lockups_total Total number of hard lockups detected since the system booted.
+# TYPE node_kernel_faults_hard_lockups_total counter
+node_kernel_faults_hard_lockups_total 1
+# HELP node_kernel_faults_oops_total Total number of kernel oopses since the system booted.
+# TYPE node_kernel_faults_oops_total counter
+node_kernel_faults_oops_total 2
+# HELP node_kernel_faults_rcu_stalls_total Total number of RCU stalls detected since the system booted.
+# TYPE node_kernel_faults_rcu_stalls_total counter
+node_kernel_faults_rcu_stalls_total 3
+# HELP node_kernel_faults_soft_lockups_total Total number of soft lockups detected since the system booted.
+# TYPE node_kernel_faults_soft_lockups_total counter
+node_kernel_faults_soft_lockups_total 4
+# HELP node_kernel_faults_warnings_total Total number of kernel WARN() calls since the system booted.
+# TYPE node_kernel_faults_warnings_total counter
+node_kernel_faults_warnings_total 5
 # HELP node_kernel_hung_tasks_total Total number of tasks that have been detected as hung since the system booted.
 # TYPE node_kernel_hung_tasks_total counter
 node_kernel_hung_tasks_total 42
@@ -3789,6 +3804,7 @@ node_scrape_collector_success{collector="hwmon"} 1
 node_scrape_collector_success{collector="infiniband"} 1
 node_scrape_collector_success{collector="interrupts"} 1
 node_scrape_collector_success{collector="ipvs"} 1
+node_scrape_collector_success{collector="kernel_faults"} 1
 node_scrape_collector_success{collector="kernel_hung"} 1
 node_scrape_collector_success{collector="ksmd"} 1
 node_scrape_collector_success{collector="lnstat"} 1
